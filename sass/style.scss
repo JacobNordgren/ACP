@@ -1,0 +1,63 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+nav {
+    padding: 10px;
+
+    @media (min-width: 600px) {
+        padding: 20px;
+    }
+}
+ul {
+    list-style-type: none;
+    grid-template-columns: repeat(2,100px);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    width: 200px;
+    background-color: #bdf496;
+    border: 1px solid #555;
+  }
+
+li a {
+    grid-template-columns: 1fr 1fr;
+    color: #23201d;
+    padding: 0px 16px;
+    text-decoration: none;
+    text-align: center;
+    // border-bottom: 1px solid #555;
+  }
+
+.fullwidth {
+    grid-column: 1/2;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: #faeaaa;
+    color: #2e2929;
+  }
+
+p {
+    padding: 20px;
+    margin: 20px;
+}
+
+.title {
+    text-align: center;
+}
+// li:last-child {
+//     border-bottom: none;
+// }
+
